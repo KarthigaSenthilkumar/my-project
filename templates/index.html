@@ -65,7 +65,7 @@
     }
 
     .edit-btn {
-      background-color: #ffc107;
+      background-color: #3885f9;
       color: black;
     }
 
@@ -177,7 +177,9 @@
             <td>${user.last_name}</td>
             <td>${user.age}</td>
             <td>${user.gender}</td>
-            <td><button class="delete-btn" onclick="deleteUser(${id})">Delete</button>
+            <td>
+              <button class="edit-btn" onclick="editUser(${id})">Edit</button>
+              <button class="delete-btn" onclick="deleteUser(${id})">Delete</button>
             </td>
           </tr>`;
         tbody.innerHTML += row;
